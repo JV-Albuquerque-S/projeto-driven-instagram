@@ -96,11 +96,11 @@ body {
 }
 
 .single-str {
-    margin-left: 18px;
+    margin-left: 26px;
     position: relative;
-    /*display: flex;
+    display: flex;
     flex-direction: column;
-    justify-content: center;*/
+    align-items: center;
 }
 
 .backgrnd-img {
@@ -116,6 +116,7 @@ body {
     border-radius: 28px;
     left: 5px;
     top: 5px;
+    object-fit: cover;
 }
 
 .single-str p {
@@ -449,11 +450,15 @@ body {
     }
 
     .center-page {
-        width: 100%;
+        width: 100vw;
     }
 
     .full-top {
         display: none;
+    }
+
+    .topo {
+        width: 100vw;
     }
 
     .full-top-mobile {
@@ -478,6 +483,12 @@ body {
         font-size: 24px;
     }
 
+    .stories-full {
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+    }
+
     .stories {
         margin-top: 55px;
         margin-bottom: -25px;
@@ -488,6 +499,7 @@ body {
         background-color: #E5E5E5;
         width: 614px;
         overflow: hidden;
+        border: none;
     }
 
     .str-seta {
