@@ -12,6 +12,9 @@ body {
     justify-content: center;
     top: 0px;
     z-index: 2;
+    border-bottom: solid;
+    border-color: #DBDBDB;
+    border-width: 2px;
 }
 
 .topo {
@@ -87,6 +90,9 @@ body {
     overflow: hidden;
     border-radius: 3px;
     position: relative;
+    border: solid;
+    border-color: #DBDBDB;
+    border-width: 2px;
 }
 
 .single-str {
@@ -141,7 +147,7 @@ body {
     margin-bottom: 60px;
     border: solid;
     border-color: #DBDBDB;
-    border-width: 1px;
+    border-width: 2px;
 }
 
 .post1 {
@@ -153,7 +159,7 @@ body {
     margin-bottom: 60px;
     border: solid;
     border-color: #DBDBDB;
-    border-width: 1px;
+    border-width: 2px;
 }
 
 .post-topo {
@@ -240,6 +246,31 @@ body {
 
 .post-bottom-likes strong{
     font-weight: 500;
+}
+
+.inferior-bar {
+    height: 54px;
+    width: 100%;
+    background-color: #FFFFFF;
+    border: solid;
+    border-width: 2px;
+    border-color: #dbdbdb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 0px;
+}
+
+.inferior-bar ion-icon {
+    font-size: 22px;
+}
+
+.inferior-inside {
+    width: calc(100% - 40px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .fixed-bar {
@@ -348,8 +379,16 @@ body {
     margin-top: 18px;
 }
 
+.inferior-bar {
+    display: none;
+}
+
 @media (max-width: 935px){
     .fixed-bar {
+        display: none;
+    }
+
+    .inferior-bar {
         display: none;
     }
 
@@ -393,17 +432,21 @@ body {
     .post11 {
         border: solid;
         border-color: #DBDBDB;
-        border-width: 1px;
+        border-width: 2px;
     }
 
     .post1 {
         border: solid;
         border-color: #DBDBDB;
-        border-width: 1px;
+        border-width: 2px;
     }
 }
 
 @media (max-width: 614px) {
+
+    .inferior-bar {
+        display: flex;
+    }
 
     .center-page {
         width: 100%;
@@ -439,6 +482,7 @@ body {
         margin-top: 55px;
         margin-bottom: -25px;
         /*margin-left: 260px;*/
+        position: relative;
         right: 0px;
         left: 0px;
         background-color: #E5E5E5;
@@ -464,12 +508,12 @@ body {
     .post11 {
         border: solid;
         border-color: #DBDBDB;
-        border-width: 1px;
+        border-width: 2px;
     }
 
     .post1 {
         border: solid;
         border-color: #DBDBDB;
-        border-width: 1px;
+        border-width: 2px;
     }
 }
