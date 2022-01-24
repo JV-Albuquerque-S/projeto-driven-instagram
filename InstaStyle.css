@@ -8,6 +8,8 @@ body {
     width: 100vw;
     background-color: #FFFFFF;
     position: fixed;
+    display: flex;
+    justify-content: center;
     top: 0px;
     z-index: 2;
 }
@@ -137,6 +139,9 @@ body {
     margin-left: 215px;
     margin-top: 24px;
     margin-bottom: 60px;
+    border: solid;
+    border-color: #DBDBDB;
+    border-width: 1px;
 }
 
 .post1 {
@@ -146,6 +151,9 @@ body {
     margin-left: 215px;
     margin-top: 24px;
     margin-bottom: 60px;
+    border: solid;
+    border-color: #DBDBDB;
+    border-width: 1px;
 }
 
 .post-topo {
@@ -238,7 +246,7 @@ body {
     /*background-color: #E5E5E5;*/
     width: 293px;
     position: fixed;
-    right: 200px;
+    left: calc(50% + 180px);
     top: 109px;
 }
 
@@ -381,9 +389,26 @@ body {
         flex-direction: column;
         align-items: center;
     }
+
+    .post11 {
+        border: solid;
+        border-color: #DBDBDB;
+        border-width: 1px;
+    }
+
+    .post1 {
+        border: solid;
+        border-color: #DBDBDB;
+        border-width: 1px;
+    }
 }
 
 @media (max-width: 614px) {
+
+    .center-page {
+        width: 100%;
+    }
+
     .full-top {
         display: none;
     }
@@ -395,22 +420,56 @@ body {
         position: fixed;
         top: 0px;
         z-index: 2;
-        justify-content: space-between;
     }
 
     .topo-mobile {
     height: 54px;
     width: 100%;
     background-color: #FFFFFF;
-    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    }
+
+    .topo-mobile ion-icon {
+        font-size: 24px;
     }
 
     .stories {
+        margin-top: 55px;
+        margin-bottom: -25px;
+        /*margin-left: 260px;*/
+        right: 0px;
+        left: 0px;
         background-color: #E5E5E5;
         width: 614px;
+        overflow: hidden;
+    }
+
+    .str-seta {
+        display: none;
+    }
+
+    .center-page {
+        width: 100vw;
         margin-left: 0px;
-        margin-top: 47px;
-        margin-bottom: 0px;
-        
+        margin-right: 0px;
+        justify-content: center;   
+    }
+
+    .posts {
+        width: 100vw;
+    }
+
+    .post11 {
+        border: solid;
+        border-color: #DBDBDB;
+        border-width: 1px;
+    }
+
+    .post1 {
+        border: solid;
+        border-color: #DBDBDB;
+        border-width: 1px;
     }
 }
